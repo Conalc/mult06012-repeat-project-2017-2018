@@ -49,6 +49,11 @@
 				document.getElementById("save_buton"+no).style="none";
 			}
 		
+		function delete_row(no)
+			{
+				document.getElementById("row"+no+"").outerHTML="";
+			}
+		
 		function sortTable(n) {
   			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   				table = document.getElementById("data_table");
@@ -149,7 +154,7 @@
 			
 			<tr id="row3">
 			<td id="firstName_row3">Emily</td>
-			<td id="lastName_row3">O'Reilly</td>
+			<td id="lastName_row3">O' Reilly</td>
 			<td id="age_row3">34</td>
 			<td id="tphone_row3">0835512398</td>
 			<td id="email_row3">EmilyOR@gmail.com</td>
