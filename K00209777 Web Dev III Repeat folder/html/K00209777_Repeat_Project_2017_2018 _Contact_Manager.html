@@ -54,6 +54,15 @@
 				document.getElementById("row"+no+"").outerHTML="";
 			}
 		
+		function add_row()
+			{
+				var new_fname=document.getElementById("new_firstName").value;
+				var new_lname=document.getElementById("new_lastName").value;
+				var new_age=document.getElementById("new_age").value;
+				var new_tphone=document.getElementById("new_tphone").value;
+				var new_email=document.getElementById("new_email").value;
+			}
+		
 		function sortTable(n) {
   			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   				table = document.getElementById("data_table");
