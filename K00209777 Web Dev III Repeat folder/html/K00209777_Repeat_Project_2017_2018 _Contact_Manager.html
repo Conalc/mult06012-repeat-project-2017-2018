@@ -31,6 +31,15 @@
 				email.innerHTML="<input type='text' id='email_text"+no+"' value='"+email_data+"'>";
 			}
 		
+		function save_row(no)
+			{
+				var fname_val=document.getElementById("fname_text"+no).value;
+				var lname_val=document.getElementById("lname_text"+no).value;
+				var age_val=document.getElementById("age_text"+no).value;
+				var tphone_val=document.getElementById("tphone_text"+no).value;
+				var email_val=document.getElementById("email_text"+no).value;
+			}
+		
 		function sortTable(n) {
   			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   				table = document.getElementById("data_table");
