@@ -4,37 +4,7 @@
 <meta charset="utf-8">
 <title>K00209777_Contact_Manager_Repeat_Project</title>
 	<script>
-		function sortTable(n)
-		{
-			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount= 0;
-			table= document.getElementById("data_table");
-			switching= true;
-			// Set the sorting direction to Ascending//
-			dir = "asc";
-			//Makes a loop that will continue until no switching has been done//
-			while (switching)
-			{
-			//Start by having no switching done//
-				switching = false;
-				rows = table.rows;
-			// Loops through all table rows except for the first, which has my table headers//
-				for (i=1; i < (rows.length - 1); i++)
-				{
-					shouldSwitch = false;
-					x = rows[i].getElementsByTagName("TD")[n];
-					y = rows[i + 1].getElementsByTagName("TD")[n];
-					if(dir == "asc")
-					{
-					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase())
-						{
-							shouldSwitch = true;
-							break;
-						}	
-					}
-					
-				}
-			}
-		}
+		
 	</script>
 </head>
 
