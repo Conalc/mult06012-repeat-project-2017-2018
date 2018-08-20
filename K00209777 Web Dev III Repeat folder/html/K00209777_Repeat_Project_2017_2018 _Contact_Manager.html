@@ -62,6 +62,10 @@
 				var new_tphone=document.getElementById("new_tphone").value;
 				var new_email=document.getElementById("new_email").value;
 				
+				var table=document.getElementById("data_table");
+				var table_len=(table.rows.length)-1;
+				var row= table.insertRow(table_len).outerHTML="<tr id='row"+table_len"'><td id='firstName_row1"+table_len+"'>"+new_fname+"</td><td id='lastName_row1"+table_len+"'>"+new_lname+"</td>
+				
 			}
 		
 		function sortTable(n) {
