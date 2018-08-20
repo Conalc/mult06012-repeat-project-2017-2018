@@ -22,8 +22,15 @@
 				var email_data=email.innerHTML;
 				
 				fname.innerHTML="<input type='text' id='fname_text"+no+"' value='"+fname_data+"'>";
-				
+				lname.innerHTML="<input type='text' id='lname_text"+no+"' value='"+lname_data+"'>";
+					//Potential break with type=text<might have to make it date>//
+				age.innerHTML="<input type='text' id='age_text"+no+"' value='"+age_data+"'>";
+					//Same as above might need to make this type=number//
+				tphone.innerHTML="<input type='text' id='tphone_text"+no+"' value='"+tphone_data+"'>";
+					//type=text might have to change to type=email if broken//
+				email.innerHTML="<input type='text' id='email_text"+no+"' value='"+email_data+"'>";
 			}
+		
 		function sortTable(n) {
   			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   				table = document.getElementById("data_table");
