@@ -38,6 +38,15 @@
 				var age_val=document.getElementById("age_text"+no).value;
 				var tphone_val=document.getElementById("tphone_text"+no).value;
 				var email_val=document.getElementById("email_text"+no).value;
+				
+				document.getElementById("firstName_row"+no).innerHTML=fname_val;
+				document.getElementById("lastName_row"+no).innerHTML=lname_val;
+				document.getElementById("age_row"+no).innerHTML=age_val;
+				document.getElementById("tphone_row"+no).innerHTML=tphone_val;
+				document.getElementById("email_row"+no).innerHTML=email_val;
+				
+				document.getElementById("edit_button"+no).style="block";
+				document.getElementById("save_buton"+no).style="none";
 			}
 		
 		function sortTable(n) {
