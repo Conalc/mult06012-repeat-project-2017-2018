@@ -8,6 +8,13 @@
 			{
 				document.getElementById("edit_button"+no).style.display="none";
 				document.getElementById("save_buton"+no).style.display="block";
+				
+				var fname=document.getElementById("firstName_row"+no);
+				var lname=document.getElementById("lastName_row"+no);
+				var age=document.getElementById("age_row"+no);
+				var tphone=document.getElementById("tphone_row"+no);
+				var email=document.getElementById("email_row"+no);
+				
 			}
 		function sortTable(n) {
   			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
