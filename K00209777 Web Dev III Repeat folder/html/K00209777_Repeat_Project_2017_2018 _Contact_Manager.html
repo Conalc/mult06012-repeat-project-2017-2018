@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <title>K00209777_Contact_Manager_Repeat_Project</title>
 	<script>
+		function edit_row(no)
+			{
+				document.getElementById("edit_button"+no).style.display="none";
+				document.getElementById("save_buton"+no).style.display="block";
+			}
 		function sortTable(n) {
   			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   				table = document.getElementById("data_table");
