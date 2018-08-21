@@ -54,20 +54,26 @@
 				document.getElementById("row"+no+"").outerHTML="";
 			}
 		
-		function add_row()
-			{
-				var new_fname=document.getElementById("new_firstName").value;
-				var new_lname=document.getElementById("new_lastName").value;
-				var new_age=document.getElementById("new_age").value;
-				var new_tphone=document.getElementById("new_tphone").value;
-				var new_email=document.getElementById("new_email").value;
-				
-				var table=document.getElementById("data_table");
-				var table_len=(table.rows.length)-1;
-				var row= table.insertRow(table_len).outerHTML="<tr id='row"+table_len"'><td id='firstName_row"+table_len+"'>"+new_fname+"</td><td id='lastName_row"+table_len+"'>"+new_lname+"</td><td id='age_row"+table_len+"'>"+new_age+"</td><td id='tphone_row"+table_len+"'>"+new_tphone+"</td><td id='email_row"+table_len+"'>"+new_email+"</td><td><input type='button' id='edit_button"+table_len+"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button"+table_len+"' value='Save' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></tr>;
-				
-				
-			}
+//		function add_row()
+//			{
+//				var new_fname=document.getElementById("new_firstName").value;
+//				var new_lname=document.getElementById("new_lastName").value;
+//				var new_age=document.getElementById("new_age").value;
+//				var new_tphone=document.getElementById("new_tphone").value;
+//				var new_email=document.getElementById("new_email").value;
+//				
+//				var table=document.getElementById("data_table");
+//				var table_len=(table.rows.length)-1;
+//				var row= table.insertRow(table_len).outerHTML="<tr id='row"+table_len"'><td id='firstName_row"+table_len+"'>"+new_fname+"</td><td id='lastName_row"+table_len+"'>"+new_lname+"</td><td id='age_row"+table_len+"'>"+new_age+"</td><td id='tphone_row"+table_len+"'>"+new_tphone+"</td><td id='email_row"+table_len+"'>"+new_email+"</td><td><input type='button' id='edit_button"+table_len+"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button"+table_len+"' value='Save' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></tr>;
+//				
+//				document.getElementById("new_firstName").value="";
+//				document.getElementById("new_lastName").value="";
+//				document.getElementById("new_age").value="";
+//				document.getElementById("new_tphone").value="";
+//				document.getElementById("new_email").value="";
+//				
+//				
+//			}
 		
 		function sortTable(n) {
   			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
